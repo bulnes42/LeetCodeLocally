@@ -17,8 +17,8 @@ public class LC566ReshapetheMatrixTest {
 
     @Test(enabled = false)
     public void testName() {
-        assertThat(program.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 1, 4)).contains(new int[][]{{1, 2, 3, 4}});
-        assertThat(program.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 2, 4)).contains(new int[][]{{1, 2}, {3, 4}});
-        assertThat(program.matrixReshape(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 1, 9)).contains(new int[][]{{1, 2, 3, 4, 5, 6, 7, 8, 9}});
+//        assertThat(program.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 1, 4)).contains(new int[][]{{1, 2, 3, 4}});
+//        assertThat(program.matrixReshape(new int[][]{{1, 2}, {3, 4}}, 2, 4)).contains(new int[][]{{1, 2}, {3, 4}});
+//        assertThat(program.matrixReshape(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, 1, 9)).contains(new int[][]{{1, 2, 3, 4, 5, 6, 7, 8, 9}});
     }
 }

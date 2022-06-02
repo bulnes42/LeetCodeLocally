@@ -6,7 +6,7 @@ import interview.java.exercises.LC1TwoSum;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-@Test(enabled = false)
+@Test(enabled = true)
 public class LC1TwoSumTest {
     private LC1TwoSum program;
 
@@ -15,7 +15,7 @@ public class LC1TwoSumTest {
         program = new LC1TwoSum();
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void testName() {
         assertThat(program.twoSum(new int[]{2, 7, 11, 15}, 9)).isEqualTo(new int[]{0, 1});
     }

@@ -13,7 +13,7 @@ public class LC590NaryTreePostorderTraversal {
         }
 
         List<Integer> list = new ArrayList<>();
-        for (Node child : root.children) {
+        for (Node child : root.next) {
             list.addAll(postorder(child));
         }
 

@@ -2,7 +2,10 @@ package interview.java.exercises;
 
 import interview.java.model.ListNode;
 
-//https://leetcode.com/problems/merge-two-sorted-lists/
+/**
+ * @see: <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Link</a>
+ */
+
 public class LC21MergeTwoSortedLists {
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

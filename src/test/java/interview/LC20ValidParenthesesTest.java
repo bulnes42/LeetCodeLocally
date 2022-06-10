@@ -6,7 +6,7 @@ import interview.java.exercises.LC20ValidParentheses;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-@Test(enabled = true)
+@Test()
 public class LC20ValidParenthesesTest {
     private LC20ValidParentheses program;
 

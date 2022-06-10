@@ -6,7 +6,7 @@ import interview.java.exercises.LC1TwoSum;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-@Test(enabled = true)
+@Test()
 public class LC1TwoSumTest {
     private LC1TwoSum program;
 

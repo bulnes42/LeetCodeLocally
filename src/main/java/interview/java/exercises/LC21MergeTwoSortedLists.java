@@ -3,7 +3,7 @@ package interview.java.exercises;
 import interview.java.model.ListNode;
 
 /**
- * @see: <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Link</a>
+ * @see <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Link</a>
  */
 
 public class LC21MergeTwoSortedLists {

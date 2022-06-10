@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.vavr.collection.List;
 
-@Test(enabled = true)
+@Test()
 public class LC21MergeTwoSortedListsTest {
     private LC21MergeTwoSortedLists program;
 

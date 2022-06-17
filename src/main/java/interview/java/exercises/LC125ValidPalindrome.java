@@ -43,13 +43,27 @@ public class LC125ValidPalindrome {
         return c <= 122 && c >= 97; // in the range a-z
     }
 
-//    public boolean isPalindrome(String s) {
-//        for (int i = 0; i < s.length() / 2; i++) {
-//            char front = 'c';
-//            char back;
-//            if (isValidChar(s.charAt(i))) {
-//                front = s.charAt(i);
-//            }
-//        }
-//    }
+    public boolean isPalindrome(String s) {
+        for (int i = 0; i < s.length() / 2; i++) {
+            // cast entire string toUpper
+            // Idea: Let i = start of string and j = end of string
+            // Check if the char at i is valid
+            // Else increment i and check again
+            // Check if the chart at j is valid
+            // Else decrement j and check again
+
+            // Once we know i and j are valid, check if they are the same character
+            // if they are the same, decrement i and j and restart loop
+            // if they are not the same return false
+            // run loop until i = j
+            // return true
+
+
+            char front = 'c';
+            char back;
+            if (isValidChar(s.charAt(i))) {
+                front = s.charAt(i);
+            }
+        }
+    }
 }

@@ -5,8 +5,6 @@ import interview.java.exercises.LC125ValidPalindrome;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
-
 public class LC125ValidPalindromeTest {
     private LC125ValidPalindrome program;
 
@@ -18,16 +16,16 @@ public class LC125ValidPalindromeTest {
 
     @Test
     public void testIsPalindromeNaiveTrue() {
-        assertThat(program.isPalindromeNaive(new String("A man, a plan, a canal: Panama"))).isEqualTo(true);
+        assertThat(program.isPalindromeNaive("A man, a plan, a canal: Panama")).isEqualTo(true);
     }
 
     @Test
-    public void testIsPalindromeNaiveEmptyStriing() {
-        assertThat(program.isPalindromeNaive(new String(" "))).isEqualTo(true);
+    public void testIsPalindromeNaiveEmptyString() {
+        assertThat(program.isPalindromeNaive(" ")).isEqualTo(true);
     }
 
     @Test
     public void testIsPalindromeNaiveFalse() {
-        assertThat(program.isPalindromeNaive(new String("race a car"))).isEqualTo(false);
+        assertThat(program.isPalindromeNaive("race a car")).isEqualTo(false);
     }
 }

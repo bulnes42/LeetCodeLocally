@@ -15,14 +15,14 @@ public class LC125ValidPalindrome {
         // Else if any 2 front/back sets do NOT match, immediately return false
         // else if deque is not empty, return false
         ArrayDeque<Character> deque = new ArrayDeque<>();
-        int lastElement = s.length() - 1;
         for (int i = 0; i < s.length(); i++) {
             if (isValidChar(s.charAt(i))) { // in the range a-z
-                deque.add(s.charAt(i));
+                deque.add(Character.toLowerCase(s.charAt(i)));
             }
         }
-        while (!deque.isEmpty()) {
-            if (!(deque.getFirst().equals(deque.getLast())))
+        while (deque.size() > 1) { // size = 1 means there is a single unmatched element in the middle of palindrome
+            // e.g. xyx is a palindrome even if the y is unmatched
+            if (!(deque.removeFirst().equals(deque.removeLast())))
                 return false;
         }
 

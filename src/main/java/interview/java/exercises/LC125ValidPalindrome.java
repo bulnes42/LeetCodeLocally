@@ -44,7 +44,10 @@ public class LC125ValidPalindrome {
     }
 
     public boolean isPalindrome(String s) {
-        for (int i = 0; i < s.length() / 2; i++) {
+        // Create temp variables to store first and last char
+        char front;
+        char back;
+        for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
             // cast entire string toUpper
             // Idea: Let i = start of string and j = end of string
             // Check if the char at i is valid
@@ -59,11 +62,24 @@ public class LC125ValidPalindrome {
             // return true
 
 
-            char front = 'c';
-            char back;
-            if (isValidChar(s.charAt(i))) {
-                front = s.charAt(i);
+
+            // Check if first char is valid and advance to next char otherwise
+            while ( i < s.length() && !Character.isLetterOrDigit(s.charAt(i))) {
+                i++;
+            }
+            // Check if last char is valid and advance to previous char otherwise
+            while( j > 0 && !Character.isLetterOrDigit(s.charAt(j) ) ) {
+                j--;
+            }
+            // store the valid chars in my temp variables
+            // This is so that I do not manipulate the original array at all when I cast toLowerCase
+            front = Character.toLowerCase(s.charAt(i));
+            back = Character.toLowerCase(s.charAt(j));
+            // Look for a mismatch between front and back
+            if (front != back) {
+                return false;
             }
         }
+        return true;
     }
 }

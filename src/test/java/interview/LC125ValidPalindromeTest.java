@@ -28,4 +28,26 @@ public class LC125ValidPalindromeTest {
     public void testIsPalindromeNaiveFalse() {
         assertThat(program.isPalindromeNaive("race a car")).isEqualTo(false);
     }
+
+
+    @Test
+    public void testIsPalindromeTrue() {
+        assertThat(program.isPalindrome("A man, a plan, a canal: Panama")).isEqualTo(true);
+    }
+
+    @Test
+    public void testIsPalindromeEmptyString() {
+        assertThat(program.isPalindrome(" ")).isEqualTo(true);
+    }
+
+    @Test
+    public void testIsPalindromeFalse() {
+        assertThat(program.isPalindrome("race a car")).isEqualTo(false);
+    }
+
+    @Test
+    public void testisPalindromeInvalidString() { assertThat(program.isPalindrome(".,")).isEqualTo(true);}
+
+    @Test
+    public void testisPalindromevalidString() { assertThat(program.isPalindrome("a,")).isEqualTo(true);}
 }

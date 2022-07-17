@@ -46,7 +46,7 @@ public class LC125ValidPalindrome {
     public boolean isPalindrome(String s) {
         // Create temp variables to store first and last char
         char front = 0;
-        char back = 1;
+        char back = 0;
         for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
             // cast entire string toUpper
             // Idea: Let i = start of string and j = end of string
@@ -68,7 +68,7 @@ public class LC125ValidPalindrome {
                 i++;
             }
             // Check if last char is valid and advance to previous char otherwise
-            while( j > 0 && !Character.isLetterOrDigit(s.charAt(j) ) ) {
+            while( j > -1 && !Character.isLetterOrDigit(s.charAt(j) ) ) {
                 j--;
             }
             // store the valid chars in my temp variables

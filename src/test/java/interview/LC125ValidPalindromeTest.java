@@ -37,7 +37,7 @@ public class LC125ValidPalindromeTest {
 
     @Test
     public void testIsPalindromeEmptyString() {
-        assertThat(program.isPalindrome(" ")).isEqualTo(true);
+        assertThat(program.isPalindrome("")).isEqualTo(true);
     }
 
     @Test
@@ -49,5 +49,5 @@ public class LC125ValidPalindromeTest {
     public void testisPalindromeInvalidString() { assertThat(program.isPalindrome(".,")).isEqualTo(true);}
 
     @Test
-    public void testisPalindromevalidString() { assertThat(program.isPalindrome("a,")).isEqualTo(true);}
+    public void testisPalindromeValidString() { assertThat(program.isPalindrome("a,")).isEqualTo(true);}
 }
